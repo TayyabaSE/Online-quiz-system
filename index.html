@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Quiz System</h1>
+
+    <div id="timer">Time left: --:--</div>
+
+    <div id="quiz-box">
+      <h2 id="question">Question will appear here</h2>
+      <div id="options"></div>
+      <div class="buttons">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn">Submit</button>
+      </div>
+    </div>
+
+    <div id="result-box" class="hidden">
+      <h2>Result</h2>
+      <p id="score-text"></p>
+      <p id="status-text"></p>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/score.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/result.js"></script>
+</body>
+</html>
